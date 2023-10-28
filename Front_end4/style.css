@@ -1,0 +1,172 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    margin: 0px auto;
+    max-width: 1500px;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    background-color: #000;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid #f5f5f5;
+    padding: 20px 0px;
+    transition: all 0.5s ease-in-out;
+}
+
+header.sticky {
+    background-color: #fff;
+    opacity: 0.9;
+    padding: 15px 0px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+header.sticky #main-menu a {
+    color: #000;
+}
+
+header.sticky #logo {
+    color: #000;
+}
+
+.inner-header {
+    display: flex;
+    /* khối cách đều 2 bên ra */
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    color: #fff;
+    text-transform: uppercase;
+    /* độ đậm của nét chữ */
+    font-weight: bold;
+    font-size: 1.5rem;
+    /* khoảng cách giữa các chữ */
+    letter-spacing: 2px;
+}
+
+ul#main-menu {
+    display: flex;
+}
+
+ul#main-menu a {
+    text-transform: uppercase;
+    padding: 10px 20px;
+    color: #fff;
+    /* chiếm toàn bộ khối trên cùng 1 dòng */
+    display: block;
+    /* display: inline; -> tuy nhiên wight và height không được áp dụng*/
+    font-weight: bold;
+
+    transition: all 0.3s ease;
+    border-radius: 20px;
+
+}
+
+/* tạo hiệu ứng cho các nút menu */
+ul#main-menu a:hover {
+    background: hsl(249, 55%, 55%);
+    color: #000;
+
+}
+
+#banner {
+    background: url(image/anh_2.jpg);
+    min-height: 480px;
+    width: 100%;
+}
+
+#content h1 {
+    padding: 30px 0px;
+}
+
+#content p {
+    margin-bottom: 1.2rem;
+}
+
+.footer__container {
+    height: 200px;
+    min-width: 100%;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__above {
+    background-color: white;
+    display: flex;
+    flex: 4;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+
+}
+
+.footer-above__one {
+    background-color: blueviolet;
+    display: flex;
+    flex: 1;
+}
+
+.footer-above__two {
+    background-color: brown;
+    display: flex;
+    flex: 1;
+}
+
+.footer-above__three {
+    background-color: yellow;
+    display: flex;
+    flex: 1;
+}
+
+.footer-above__four {
+    background-color: cadetblue;
+    display: flex;
+    flex: 1;
+}
+
+.footer__below {
+    background-color: black;
+    flex: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: 2px solid #f5f5f5;
+
+}
+
+.footer__below--left {
+    padding-left: 20px;
+}
+
+.footer__below--right {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__below--right li a {
+    padding: 10px 20px;
+}
